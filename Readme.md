@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Краснорядцева](https://up.htmlacademy.ru/adaptive/6/user/80826).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Гатилин](https://htmlacademy.ru/profile/id187233).
 
 ---
 
