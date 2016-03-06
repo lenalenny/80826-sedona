@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона form</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="page-header">
+        <div class="page-header__logo"></div>
+        <div class="mobile-menu">
+          <div class="mobile-menu__icon"></div>
+          <ul class="mobile-menu__list mobile-menu__list--opened">
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Главная</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Фото и видео</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Форма отзыва</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="inner-banner">
+          <div class="inner-banner__title">Sedona</div>
+        </div>
+        <section class="page-info">
+          <h1 class="page-info__title">Оставьте свой отзыв</h1>
+          <div class="page-info__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</div>
+        </section>
+        <form class="review-form" action="" method="POST">
+        <section class="form-section">
+          <h2 class="form-section__title">Представьтесь, пожалуйста:</h2>
+          <div class="form-section__info">
+            <label for="input-name" class="form-section__label">Имя:</label>
+            <input type="text" class="form-section__input-text" id="input-name" name="input-name" placeholder="Петр">
+          </div>
+          <div class="form-section__info">
+            <label for="input-surname" class="form-section__label">Фамилия:</label>
+            <input type="text" class="form-section__input-text" id="input-surname" name="input-surname" placeholder="Иванов">
+          </div>
+          <div class="form-section__info">
+            <label for="input-secondname" class="form-section__label">Отчество:</label>
+            <input type="text" class="form-section__input-text" id="input-secondname" name="input-secondname" placeholder="Александрович">
+          </div>
+        </section>
+        <section class="form-section">
+          <h2 class="form-section__title">Контактная информация:</h2>
+          <div class="form-section__info">
+            <label for="input-phone" class="form-section__label">Контактный телефон:</label>
+            <input type="tel" class="form-section__input-text form-section__input-text--phone" id="input-phone" name="input-phone" placeholder="Введите телефон">
+            <div class="form-section__error">Ошибка, перепроверьте номер</div>
+          </div>
+          <div class="form-section__info">
+            <label for="input-email" class="form-section__label">Электронная почта:</label>
+            <input type="email" class="form-section__input-text form-section__input-text--email" id="input-email" name="input-email" placeholder="Введите e-mail">
+          </div>
+        </section>
+        <section class="form-section">
+          <h2 class="form-section__title">Ваше общее впечатление:</h2>
+          <div class="form-section__info">
+            <input type="radio" class="form-section__input-radio" id="radio-positive" name="radio-mark" checked>
+            <label for="radio-positive" class="form-section__label">Скорее положительное</label>
+          </div>
+          <div class="form-section__info">
+            <input type="radio" class="form-section__input-radio" id="radio-negative" name="radio-mark">
+            <label for="radio-negative" class="form-section__label">Скорее отрицательное</label>
+          </div>
+          <div class="form-section__info">
+            <input type="radio" class="form-section__input-radio" id="radio-none" name="radio-mark">
+            <label for="radio-none" class="form-section__label">Затрудняюсь ответить</label>
+          </div>
+        </section>
+        <section class="form-section">
+          <h2 class="form-section__title">Посещенные достопримечательности:</h2>
+          <div class="form-section__info">
+            <input type="checkbox" class="form-section__input-checkbox" id="check1" name="check1" checked>
+            <label for="check1" class="form-section__label">Мост Дьявола</label>
+          </div>
+          <div class="form-section__info">
+            <input type="checkbox" class="form-section__input-checkbox" id="check2" name="check2" checked>
+            <label for="check2" class="form-section__label">Слайд-парк</label>
+          </div>
+          <div class="form-section__info">
+            <input type="checkbox" class="form-section__input-checkbox" id="check3" name="check3">
+            <label for="check3" class="form-section__label">Гора Колокол</label>
+          </div>
+          <div class="form-section__info">
+            <input type="checkbox" class="form-section__input-checkbox" id="check4" name="check4" checked>
+            <label for="check4" class="form-section__label">Красные скалы</label>
+          </div>
+        </section>
+        <section class="form-section">
+          <h2 class="form-section__title">Опишите свои эмоции:</h2>
+          <div class="form-section__info">
+            <textarea name="emotions" id="emotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+          </div>
+        </section>
+        <button class="review-form__button" type="submit">Отправить отзыв</button>
+        </form>
+      </main>
+      <footer class="page-footer">
+        <div class="page-footer__hashtag">#visitsedona</div>
+        <div class="page-footer__social">
+          <ul class="social-links">
+            <li class="social-links__item"><a class="social-links__link social-links__link--tweet" href="#"></a></li>
+            <li class="social-links__item"><a class="social-links__link social-links__link--facebook" href="#"></a></li>
+            <li class="social-links__item"><a class="social-links__link social-links__link--youtube" href="#"></a></li>
+          </ul>
+        </div>
+        <div class="page-footer__dev">Разработано <span class="page-footer__academy"></span></div>
+      </footer>
+    </div>
+  </body>
+</html>
