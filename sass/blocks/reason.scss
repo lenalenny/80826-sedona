@@ -1,3 +1,21 @@
 .reason {
   outline: 1px solid #009900;
+  min-height: 206px;
+  text-align: center;
+  width: 100%;
 }
+.reason--small {
+  min-height: 150px;
+}
+
+@media (min-width: $tablet-width) {
+  .reason {
+    width: 33.333%;
+    float: left;
+  }
+  .reason--small {
+  min-height: 250px;
+}
+}
+
+

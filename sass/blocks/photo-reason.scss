@@ -1,3 +1,15 @@
 .photo-reason {
   outline: 1px solid #009900;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo-reason__img-wrap {
+  flex-grow: 1;
+}
+
+@media (min-width: $tablet-width) {
+.photo-reason--reverse{
+  flex-direction: row-reverse;
+}
 }

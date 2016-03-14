@@ -1,3 +1,23 @@
 .advantages {
   outline: 1px solid #009900;
+  min-height: 395px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.advantages__item {
+  min-height: 135px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    min-height: 320px;
+}
+  .advantages__item {
+    width: 33%;
+  }
 }

@@ -1,3 +1,27 @@
 .main-menu {
-   outline: 1px solid #009900;
+  outline: 1px solid #009900;
+  @include container;
+  min-height: 222px;
 }
+
+.main-menu__item {
+  display: block;
+  min-height: 55px;
+  text-align: center;
+
+}
+
+@media (min-width: $tablet-width) {
+  .main-menu {
+    min-height: 55px;
+}
+  .main-menu__item {
+    float: left;
+    width: 20%;
+}
+  .main-menu__item:nth-of-type(3) {
+    margin-left: 20%;
+}
+}
+
+

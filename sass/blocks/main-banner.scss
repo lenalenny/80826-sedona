@@ -1,3 +1,16 @@
 .main-banner {
   outline: 1px solid #009900;
+  min-height: 289px;
+  text-align: center;
+  margin-top: -27px;
+  padding-top: 100px;
 }
+
+
+  @media (min-width: $tablet-width) {
+    .main-banner {
+      min-height: 445px;
+    }
+  }
+
+

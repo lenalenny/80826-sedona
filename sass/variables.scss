@@ -1,0 +1,19 @@
+/*
+
+Обязательно использовать переменные в sass для:
+1. Цвета.
+2. Одинаковые горизонтальные отступы.
+3. Одинаковые border-radius.
+4. Разрешения экранов для media-queries.
+
+*/
+
+$mobile-widths-only: 767px;
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
+
+$main-padding-mobile: 20px;
+$main-padding-tablet: 60px;
+
+
