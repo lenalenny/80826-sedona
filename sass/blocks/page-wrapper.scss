@@ -1,4 +1,4 @@
 .page-wrapper {
+  @include container;
   outline: 1px solid #009900;
-   @include container;
 }

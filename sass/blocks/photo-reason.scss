@@ -1,7 +1,8 @@
 .photo-reason {
-  outline: 1px solid #009900;
   display: flex;
   flex-wrap: wrap;
+
+  outline: 1px solid #009900;
 }
 
 .photo-reason__img-wrap {
@@ -9,7 +10,7 @@
 }
 
 @media (min-width: $tablet-width) {
-.photo-reason--reverse{
-  flex-direction: row-reverse;
-}
+  .photo-reason--reverse{
+    flex-direction: row-reverse;
+  }
 }

@@ -1,11 +1,14 @@
 .page-header {
-  outline: 1px solid #009900;
   position: relative;
+
+  outline: 1px solid #009900;
 }
 
 .page-header__logo {
   @include container;
+
   min-height: 85px;
+
   text-align: center;
 }
 
@@ -14,6 +17,7 @@
     position: absolute;
     top: 0;
     left: 335px;
+
     width: 100px;
   }
 }
@@ -21,8 +25,9 @@
 @media (min-width: $desktop-width) {
   .page-header__logo {
     left: 507px;
+
     width: 185px;
     height: 97px;
     }
-  }
+}
 

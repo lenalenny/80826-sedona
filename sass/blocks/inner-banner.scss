@@ -1,3 +1,15 @@
 .inner-banner {
+  min-height: 111px;
+  margin-top: -27px;
+  padding-top: 50px;
+
+  text-align: center;
+
   outline: 1px solid #009900;
+}
+
+@media (min-width: $tablet-width) {
+  .inner-banner {
+    min-height: 290px;
+  }
 }

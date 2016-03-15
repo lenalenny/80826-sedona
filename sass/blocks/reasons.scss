@@ -1,12 +1,25 @@
 .reasons {
   outline: 1px solid #009900;
 }
-@media (min-width: $tablet-width) {
+
 .reasons__list {
-  min-height: 1100px;
+  display: flex;
+  flex-wrap: wrap;
 }
-}
+
 .reasons__item {
-  display: block;
+  width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .reasons__list {
+    min-height: 1100px;
+  }
+  .reasons__item:nth-of-type(3),
+  .reasons__item:nth-of-type(4),
+  .reasons__item:nth-of-type(5), {
+    width: 33.3%;
+  }
+}
+
 

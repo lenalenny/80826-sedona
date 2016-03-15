@@ -11,20 +11,6 @@
   }
 }
 
-@mixin bg-index {
-  background: url("../img/pages/sedona-index-mobile.png") center top no-repeat;
-  min-height: 3600px;
-
-  @media (min-width: $tablet-width) {
-    background: url("../img/pages/sedona-index-tablet.png") center top no-repeat;
-    min-height: 2654px;
-  }
-
-  @media (min-width: $desktop-width) {
-    background: url("../img/pages/sedona-index-desktop.png") center top no-repeat;
-  }
-}
-
 @mixin no-mp {
   margin: 0;
   padding: 0;

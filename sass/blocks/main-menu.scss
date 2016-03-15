@@ -1,27 +1,31 @@
 .main-menu {
-  outline: 1px solid #009900;
-  @include container;
   min-height: 222px;
+
+  outline: 1px solid #009900;
 }
 
 .main-menu__item {
-  display: block;
+  width: 100%;
   min-height: 55px;
-  text-align: center;
 
+  text-align: center;
+}
+
+.main-menu__list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @media (min-width: $tablet-width) {
   .main-menu {
     min-height: 55px;
-}
+  }
   .main-menu__item {
-    float: left;
     width: 20%;
-}
+  }
   .main-menu__item:nth-of-type(3) {
-    margin-left: 20%;
-}
+    margin-left: auto;
+  }
 }
 
 
