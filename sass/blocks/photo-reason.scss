@@ -2,11 +2,25 @@
   display: flex;
   flex-wrap: wrap;
 
+  overflow: hidden;
+
   outline: 1px solid #009900;
+
+
 }
 
 .photo-reason__img-wrap {
+  position:relative;
+
   flex-grow: 1;
+}
+
+.photo-reason__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
 }
 
 @media (min-width: $tablet-width) {
