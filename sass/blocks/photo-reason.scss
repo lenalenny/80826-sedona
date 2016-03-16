@@ -11,7 +11,6 @@
 
 .photo-reason__img-wrap {
   position:relative;
-
   flex-grow: 1;
 }
 
@@ -20,7 +19,16 @@
   left: 50%;
   top: 50%;
 
+  min-width:100%;
+  min-height:100%;
+
   transform: translate(-50%, -50%);
+}
+
+@media (max-width: $mobile-widths-only) {
+  .photo-reason__img-wrap {
+    height: 260px;
+  }
 }
 
 @media (min-width: $tablet-width) {
