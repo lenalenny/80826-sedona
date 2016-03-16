@@ -1,5 +1,5 @@
-@import 'mixins';
 @import 'variables';
+@import 'mixins';
 @import 'normalize';
 
 @import 'blocks/page-wrapper';
@@ -20,11 +20,13 @@
 @import 'blocks/hotel-search';
 @import 'blocks/map';
 
+@import 'blocks/posts';
 @import 'blocks/post';
 @import 'blocks/sedona-video';
 
 @import 'blocks/review-form';
 @import 'blocks/form-section';
+@import 'blocks/popup';
 
 
 

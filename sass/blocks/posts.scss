@@ -1,0 +1,18 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+
+  outline: 1px solid #009900;
+}
+
+@media (min-width: $tablet-width) {
+  .posts {
+      margin-top: 21px;
+      }
+}
+
+@media (min-width: $desktop-width) {
+  .posts {
+      margin-top: 71px;
+      }
+}

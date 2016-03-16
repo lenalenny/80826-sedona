@@ -1,3 +1,6 @@
 .page-wrapper {
+  @include container;
+  position:relative;
+
   outline: 1px solid #009900;
 }

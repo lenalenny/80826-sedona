@@ -1,3 +1,23 @@
 .reasons {
   outline: 1px solid #009900;
 }
+
+.reasons__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reasons__item {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .reasons__list {
+    min-height: 1100px;
+  }
+  .reasons__item--small {
+    width: 33.3%;
+  }
+}
+
+
