@@ -1,6 +1,16 @@
 $(document).ready(function ($) {
   pageWidget(['index','photo','form']);
   getAllClasses('html','.elements_list');
+
+  $("body").on("click", ".menu-icon" ,function() {
+    if ($("body").hasClass("opened-menu")) {
+      $("body").removeClass("opened-menu");
+      $("body").addClass("closed-menu");
+    } else {
+      $("body").removeClass("closed-menu");
+      $("body").addClass("opened-menu");
+    }
+  });
 });
 
 

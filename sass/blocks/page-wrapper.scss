@@ -2,5 +2,13 @@
   @include container;
   position:relative;
 
-  outline: 1px solid #009900;
+  padding-top: $header-height-mobile;
+
+  background: white;
+  box-shadow: 0 0 30px -5px #444;
+
+}
+
+@media (min-width: $tablet-width) {
+
 }

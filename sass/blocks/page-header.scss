@@ -1,32 +1,35 @@
 .page-header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-  outline: 1px solid #009900;
+  width: 100%;
+  height: $header-height-mobile;
 }
 
 .page-header__logo {
-  @include container;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
 
-  min-height: 85px;
+  width: 103px;
+  height: 85px;
+  margin: 0;
+
+  background: url("../img/logo-sedona-mobile.svg") no-repeat;
 
   text-align: center;
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__logo {
-    position: absolute;
-    top: 0;
-    left: 335px;
-
-    width: 100px;
+  .page-header {
+    height: $header-height-tablet;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
-    left: 507px;
-
-    width: 185px;
     height: 97px;
     }
 }

@@ -1,5 +1,40 @@
 .page-info {
-  min-height: 185px;
+  padding: 0 $main-padding-mobile;
+  margin-top: 40px;
+  margin-bottom: 30px;
+
   text-align: center;
-  outline: 1px solid #009900;
+  text-transform: uppercase;
+
+}
+
+.page-info__title {
+  font-size: 18px;
+}
+
+.page-info__description {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-info {
+    padding: 0 9%;
+    margin-top: 48px;
+    margin-bottom: 50px;
+  }
+  .page-info__title {
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .page-info__description {
+    padding-top: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-info {
+    padding: 0 24%;
+  }
 }

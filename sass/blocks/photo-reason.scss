@@ -2,16 +2,14 @@
   display: flex;
   flex-wrap: wrap;
 
-  overflow: hidden;
-
-  outline: 1px solid #009900;
-
-
 }
 
 .photo-reason__img-wrap {
   position:relative;
   flex-grow: 1;
+  min-width:320px;
+
+  overflow: hidden;
 }
 
 .photo-reason__img {
@@ -34,5 +32,8 @@
 @media (min-width: $tablet-width) {
   .photo-reason--reverse{
     flex-direction: row-reverse;
+  }
+  .photo-reason {
+    min-height: 257px;
   }
 }

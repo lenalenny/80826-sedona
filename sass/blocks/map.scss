@@ -1,3 +1,18 @@
 .map {
-  outline: 1px solid #009900;
+
+}
+
+.map__wrap {
+  position: relative;
+  min-height: 350px;
+  overflow: hidden;
+}
+
+.map__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
 }

@@ -1,9 +1,12 @@
 @mixin container {
-  width: $mobile-width;
-  margin:0 auto;
+  width: 100%;
+  min-width: $mobile-width;
+  margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    min-width: $tablet-width;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {

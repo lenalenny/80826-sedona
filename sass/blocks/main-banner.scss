@@ -1,16 +1,17 @@
 .main-banner {
-  height: 289px;
-  padding-top: 100px;
+  height: 390px;
 
   text-align: center;
 
-  outline: 1px solid #009900;
+  background: url("../img/main-banner.png") 50% 50% no-repeat;
+  background-size: cover;
+
 }
 
 
 @media (min-width: $tablet-width) {
   .main-banner {
-    height: 445px;
+    height: 520px;
   }
 }
 
