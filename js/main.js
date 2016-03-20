@@ -1,3 +1,4 @@
+
 $(document).ready(function ($) {
   pageWidget(['index','photo','form']);
   getAllClasses('html','.elements_list');
@@ -13,6 +14,15 @@ $(document).ready(function ($) {
   });
 });
 
+/*
+function ready(fn) {
+  if (document.readyState != 'loading'){
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
+  }
+}
+*/
 
 //Functions for development
 function getAllClasses(context, output) {

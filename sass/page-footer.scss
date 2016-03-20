@@ -1,7 +1,6 @@
 .page-footer {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .page-footer__hashtag {
@@ -35,15 +34,14 @@
   display: block;
   height: 40px;
   width: 40px;
-
-  background: url("../img/htmlacademy.svg") no-repeat;
-  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer {
     min-height: 110px;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 $main-padding-tablet;
   }
   .page-footer__hashtag {
     width: 33.33%;
@@ -62,7 +60,6 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     min-height: 120px;
-    padding: 0 3%;
     }
   .page-footer__dev {
 

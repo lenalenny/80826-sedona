@@ -1,0 +1,38 @@
+.main-banner {
+  position: relative;
+  height: 390px;
+  width: 100%;
+  text-align: center;
+
+  background: url("../img/bg-back-mobile.jpg") 50% 50% no-repeat;
+  background-size: cover;
+
+}
+
+.main-banner__text {
+  width: 280px;
+  height: auto;
+  margin-top: 92px;
+  padding: 0 20px;
+}
+
+.main-banner__angles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .main-banner {
+    height: 520px;
+  }
+  .main-banner__text {
+    width: 460px;
+    margin-top: 79px;
+  }
+}
+
+
+
+
