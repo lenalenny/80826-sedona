@@ -187,6 +187,13 @@ padding-top: 45px;
   display: none;
 }
 
+ .form-section__label--mobile {
+    display: block;
+  }
+  .form-section__label--desktop {
+    display: none;
+  }
+
 @media (min-width: $tablet-width) {
   .form-section {
     border: none;
@@ -429,6 +436,13 @@ padding-top: 45px;
 
   .page-footer {
     padding: 0 10%;
+  }
+
+  .form-section__label--mobile {
+    display: none;
+  }
+  .form-section__label--desktop {
+    display: block;
   }
 
 }
