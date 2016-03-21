@@ -9,7 +9,7 @@
 
 }
 
-.main-banner__text {
+.main-banner__index-text {
   width: 280px;
   height: auto;
   margin-top: 92px;
@@ -18,19 +18,50 @@
 
 .main-banner__angles {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
   width: 100%;
 }
+
+.main-banner--inner {
+  height: 160px;
+}
+
+.main-banner__sedona-text {
+  width: 232px;
+  height: auto;
+  margin-top: 52px;
+  padding: 0px 20px;
+}
+
+
+
 
 @media (min-width: $tablet-width) {
   .main-banner {
     height: 520px;
   }
-  .main-banner__text {
+  .main-banner__index-text {
     width: 460px;
     margin-top: 79px;
   }
+    .main-banner--inner {
+    height: 290px;
+  }
+
+  .main-banner__sedona-text {
+    width: 460px;
+    margin-top: 95px;
+}
+}
+
+@media (min-width: $desktop-width) {
+  .main-banner--inner {
+    height: 300px;
+  }
+  .main-banner__sedona-text {
+    margin-top: 100px;
+}
 }
 
 

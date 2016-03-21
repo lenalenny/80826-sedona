@@ -18,6 +18,16 @@
   line-height: 24px;
 }
 
+.page-info--inner {
+  padding: 0 20px;
+  margin-top: 36px;
+  margin-bottom: 18px;
+}
+
+.page-info--inner .page-info__description {
+    padding-top: 15px;
+}
+
 @media (min-width: $tablet-width) {
   .page-info {
     padding: 0 9%;
@@ -31,10 +41,27 @@
   .page-info__description {
     padding-top: 14px;
   }
+  .page-info--inner {
+    padding: 0 18%;
+    margin-top: 75px;
+  }
+  .page-info--inner .page-info__title {
+    font-size: 30px;
+  }
+  .page-info--inner .page-info__description {
+    padding-top: 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-info {
     padding: 0 24%;
+  }
+  .page-info--inner {
+    padding: 0 18%;
+    margin-top: 114px;
+  }
+  .page-info {
+    margin-bottom: 35px;
   }
 }

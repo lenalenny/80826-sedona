@@ -33,3 +33,10 @@ body {
   background: #f2f2f2;
 }
 
+input:-moz-placeholder {
+  color: black;
+}
+input::-webkit-input-placeholder {
+  color: black;
+}
+

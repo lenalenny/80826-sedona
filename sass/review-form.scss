@@ -1,16 +1,20 @@
 .review-form {
   display: flex;
   flex-wrap: wrap;
-
-  outline: 1px solid #009900;
+  margin-bottom: 20px;
 }
 
 .review-form__button-wrap {
   display: flex;
+  width: 100%;
+  padding: 20px;
+  align-items: center;
 }
 
 .review-form__required {
   display: none;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,4 +22,16 @@
     display: block;
     margin-left: auto;
   }
+  .review-form__button-wrap {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+  .review-form {
+  margin-bottom: 45px;
+  }
+
+  .review-form__button {
+    width: 50%;
+  }
+
 }

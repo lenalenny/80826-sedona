@@ -6,7 +6,6 @@
 .page-footer__hashtag {
   width: 100%;
   padding: 35px 0;
-
   text-align: center;
   font-size: 21px;
   font-weight: bold;
@@ -54,6 +53,12 @@
   .page-footer__dev {
     width: 33.33%;
     @include no-mp;
+  }
+  .page-footer__dev {
+  justify-content: flex-end;
+  }
+  .page-footer__hashtag {
+  text-align: left;
   }
 }
 
