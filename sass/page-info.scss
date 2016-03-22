@@ -8,6 +8,14 @@
 
 }
 
+.page-info--photo {
+  padding: 0 $form-mobile-padding;
+}
+
+.page-info--photo .page-info__description {
+    padding-top: 12px;
+  }
+
 .page-info__title {
   font-size: 18px;
 }
@@ -27,6 +35,7 @@
 .page-info--inner .page-info__description {
     padding-top: 15px;
 }
+
 
 @media (min-width: $tablet-width) {
   .page-info {
@@ -48,9 +57,16 @@
   .page-info--inner .page-info__title {
     font-size: 30px;
   }
+
   .page-info--inner .page-info__description {
     padding-top: 10px;
   }
+
+  .page-info--photo .page-info__description {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -63,5 +79,9 @@
   }
   .page-info {
     margin-bottom: 35px;
+  }
+  .page-info--photo {
+    padding-left: 29%;
+    padding-right: 29%;
   }
 }

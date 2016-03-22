@@ -1,10 +1,221 @@
 .sedona-video {
-  outline: 1px solid #009900;
-  min-height: 509px;
+
 }
+
+.sedona-video__title {
+  @include no-mp;
+  padding-top: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+}
+
+.sedona-video__description {
+  padding: 30px 40px 0 40px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.sedona-video__clip {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 37px;
+}
+
+.sedona-video__img-wrap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.sedona-video__img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-width:100%;
+  min-height:100%;
+  transform: translate(-50%, -50%);
+}
+
+.sedona-video__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 $form-mobile-padding;
+  margin-top: -45px;
+  z-index: 10;
+
+}
+
+.sedona-video__play-control {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  padding: 0 22px;
+  background: rgba(0, 0, 0, 0.5);
+
+  &:after {
+    content: "";
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    top: 45px;
+    left: 0;
+    z-index: -1;
+    background: $input-bg;
+
+
+  }
+}
+
+.sedona-video__line {
+  display: flex;
+  align-items: center;
+  height: 3px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.sedona-video__slider {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: white;
+  z-index: 10;
+  margin-left: 15%;
+}
+
+.sedona-video__repeat {
+  display: flex;
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+}
+
+.sedona-video__quality {
+  display: flex;
+  height: 65px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.sedona-video__fullscreen {
+  display: flex;
+  height: 65px;
+  width: 65px;
+  cursor: pointer;
+}
+
+.sedona-video__icon {
+  margin: auto;
+  fill: #5c6870;
+}
+
+.sedona-video__icons-right {
+  display: flex;
+}
+
+.sedona-video {
+  margin-bottom: 40px;
+}
+
+
 
 @media (min-width: $tablet-width) {
   .sedona-video {
-    min-height: 735px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+  }
+
+  .sedona-video__title {
+    font-size: 30px;
+  }
+
+  .sedona-video__description {
+    padding: 24px 160px 0 160px;
+  }
+
+  .sedona-video__clip {
+    margin-top: 74px;
+    padding-left: $main-padding-tablet;
+    padding-right: $main-padding-tablet;
+  }
+
+  .sedona-video__img-wrap {
+    height: 500px;
+  }
+
+  .sedona-video__play-control {
+    width: auto;
+  }
+
+  .sedona-video__play-control {
+    &:after {
+      display: none;
+    }
+  }
+  .sedona-video__icon {
+    fill: white;
+  }
+
+  .sedona-video__controls {
+    padding: 0;
+    height: 95px;
+    margin-top: -95px;
+    z-index: 10;
+    background: rgba(0,0,0,0.5);
+  }
+  .sedona-video__play-control {
+    background: none;
+    flex-grow: 1;
+    height: 95px;
+    padding: 0;
+  }
+
+  .sedona-video__repeat {
+    order: -1;
+    height: 95px;
+    width: 95px;
+  }
+
+  .sedona-video__fullscreen {
+    height: 95px;
+    width: 105px;
+    width: 50px;
+    margin-right: 25px;
+  }
+
+  .sedona-video__quality {
+    height: 95px;
+    width: 70px;
+  }
+  .sedona-video__icons-right {
+    margin-left: 22px;
+  }
+
+
+}
+
+@media (min-width: $desktop-width) {
+  .sedona-video {
+    margin-top: 35px;
+    }
+  .sedona-video__description {
+    padding: 24px 30% 0 30%;
+  }
+  .sedona-video__clip {
+    margin-top: 74px;
+    padding-left: 16.5%;
+    padding-right: 16.5%;
+  }
+  .sedona-video {
+    margin-bottom: 82px;
   }
 }

@@ -128,7 +128,6 @@ padding-top: 45px;
 .form-section__text--radio {
   &::before {
     content: '';
-    display: inline-block;
     width: 60px;
     height: 60px;
     margin-right: 18px;
@@ -152,7 +151,6 @@ padding-top: 45px;
 .form-section__text--check {
   &::before {
     content: '';
-    display: inline-block;
     width: 56px;
     height: 57px;
     margin-right: 22px;
