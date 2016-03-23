@@ -1,0 +1,68 @@
+.menu-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -7px;
+  z-index: 250;
+
+  width: 23px;
+  height: 21px;
+
+  text-transform: uppercase;
+  color: transparent;
+
+  cursor: pointer;
+}
+
+
+.menu-icon__decor {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $blue;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $blue;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-icon::before {
+    transform: translate(0, -5px);
+}
+
+.menu-icon::after {
+    transform: translate(0, 5px);
+}
+
+.opened-menu .menu-icon__decor {
+    transform: rotate(180deg);
+    background: white;
+    transform: translate(100%, 0);
+    opacity: 0;
+}
+
+.opened-menu .menu-icon::before,
+.opened-menu .menu-icon::after {
+    width: 27px;
+    background: white;
+}
+
+.opened-menu .menu-icon::before {
+    transform: translate(0px, 5px) rotate(45deg);
+}
+
+.opened-menu .menu-icon::after {
+    transform: translate(0px, -3px) rotate(-45deg);
+}
+@media (min-width: $tablet-width) {
+  .menu-icon {
+    display: none;
+  }
+}

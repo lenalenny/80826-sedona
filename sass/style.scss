@@ -1,32 +1,33 @@
 @import 'variables';
 @import 'mixins';
 @import 'normalize';
+@import 'base';
 
-@import 'blocks/page-wrapper';
-@import 'blocks/page-header';
-@import 'blocks/main-menu';
-@import 'blocks/menu-icon';
-@import 'blocks/main-content';
-@import 'blocks/page-info';
-@import 'blocks/page-footer';
-@import 'blocks/social';
+@import 'page-wrapper';
+@import 'page-header';
+@import 'main-menu';
+@import 'menu-icon';
+@import 'main-content';
+@import 'page-info';
+@import 'page-footer';
+@import 'social';
 
-@import 'blocks/main-banner';
-@import 'blocks/inner-banner';
-@import 'blocks/reasons';
-@import 'blocks/photo-reason';
-@import 'blocks/reason';
-@import 'blocks/advantages';
-@import 'blocks/hotel-search';
-@import 'blocks/map';
+@import 'main-banner';
+@import 'reasons';
+@import 'photo-reason';
+@import 'reason';
+@import 'advantages';
+@import 'hotel-search';
+@import 'button';
+@import 'map';
 
-@import 'blocks/posts';
-@import 'blocks/post';
-@import 'blocks/sedona-video';
+@import 'posts';
+@import 'post';
+@import 'sedona-video';
 
-@import 'blocks/review-form';
-@import 'blocks/form-section';
-@import 'blocks/popup';
+@import 'review-form';
+@import 'form-section';
+@import 'popup';
 
 
 

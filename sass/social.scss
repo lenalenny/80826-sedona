@@ -1,0 +1,26 @@
+.social {
+  display: flex;
+  justify-content: center;
+  font-size: 0;
+}
+
+.social__link  {
+  position: relative;
+  width: 46px;
+  height: 48px;
+  margin-right: 7px;
+
+  background: $blue;
+
+  cursor: pointer;
+
+  display:flex;
+}
+
+.social__icon {
+  display: block;
+  margin: auto;
+  fill: white;
+}
+
+

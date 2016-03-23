@@ -1,0 +1,39 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: $header-height-mobile;
+
+}
+
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 100;
+
+  width: 103px;
+  height: 85px;
+  margin: 0;
+
+  background: url("../img/logo-sedona-mobile.svg") no-repeat;
+
+  text-align: center;
+  font-size: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    height: $header-height-tablet;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    height: 97px;
+    }
+}
+

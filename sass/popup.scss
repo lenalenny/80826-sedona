@@ -1,0 +1,56 @@
+.popup {
+  position: absolute;
+  top: 40vh;
+  left: 50%;
+  z-index: 300;
+  margin-left: -160px;
+  display: block;
+  width: 210px;
+  padding: 40px 55px 35px 55px;
+  background: white;
+
+  box-shadow: 0 0 10px -3px #222222;
+}
+
+
+.popup--sent {
+  padding: 0;
+  width: 320px;
+}
+
+.popup__text-wrap {
+  padding: 40px 55px;
+}
+
+.popup__btn-wrap {
+  background: $input-bg;
+  padding: 20px;
+}
+
+.popup--sent {
+  display: none;
+}
+
+.popup--error {
+  display: none;
+}
+
+.popup__title {
+  @include no-mp;
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+}
+
+.popup__description {
+  @include no-mp;
+  padding-top: 35px;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.popup__btn {
+  margin-top: 30px;
+}

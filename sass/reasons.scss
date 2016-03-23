@@ -1,5 +1,5 @@
 .reasons {
-  outline: 1px solid #009900;
+
 }
 
 .reasons__list {
@@ -11,13 +11,20 @@
   width: 100%;
 }
 
+.reasons__item--small {
+  background: $grey-bg;
+  padding: 0 20px;
+}
+
 @media (min-width: $tablet-width) {
   .reasons__list {
     min-height: 1100px;
   }
   .reasons__item--small {
     width: 33.3%;
+     padding: 0;
   }
+
 }
 
 
