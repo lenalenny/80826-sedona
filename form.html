@@ -14,23 +14,22 @@
         </div>
         <nav class="main-menu">
           <ul class="main-menu__list">
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Фото и видео</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Форма отзыва</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">HTML Academy</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фото и видео</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
         </nav>
-        <div class="page-header__logo">Sedona</div>
+        <a href="index.html" class="page-header__logo">Sedona</a>
       </header>
       <main class="main-content">
         <div class="main-banner main-banner--inner">
           <img class="main-banner__sedona-text" src="img/text-sedona.svg" alt="Седона" width="320" height="215">
-           <svg class="main-banner__angles" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111"
-         xml:space="preserve">
-          <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57 "/>
-          <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056 "/>
-          </svg>
+          <picture>
+            <source media="(min-width: 1190px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+            <img class="main-banner__angles" src="img/bg-intro-triangle-mobile.svg" alt="Баннер">
+          </picture>
         </div>
         <section class="page-info page-info--inner">
           <h1 class="page-info__title">Оставьте свой отзыв</h1>

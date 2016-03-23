@@ -29,11 +29,17 @@
   .page-header {
     height: $header-height-tablet;
   }
+  .page-header__logo {
+   z-index: 400;
+   background: url("../img/logo-sedona-tablet.svg") no-repeat;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__logo {
     height: 97px;
+    width: 186px;
+    background: url("../img/logo-sedona-desktop.svg") no-repeat;
     }
 }
 
