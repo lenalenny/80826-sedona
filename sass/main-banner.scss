@@ -20,8 +20,8 @@
 .main-banner__angles {
   position: absolute;
   bottom: -1px;
-  left: 0;
-  width: 100%;
+  left:-5px;
+  width:calc(100% + 9px);
 }
 
 .main-banner--inner {

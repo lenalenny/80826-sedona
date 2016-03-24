@@ -14,15 +14,15 @@
   left: 50%;
   transform: translate(-50%);
   z-index: 100;
-
   width: 103px;
   height: 85px;
   margin: 0;
-
-  background: url("../img/logo-sedona-mobile.svg") no-repeat;
-
   text-align: center;
   font-size: 0;
+}
+
+.page-header__img {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,7 +31,7 @@
   }
   .page-header__logo {
    z-index: 400;
-   background: url("../img/logo-sedona-tablet.svg") no-repeat;
+
   }
 }
 
@@ -39,7 +39,7 @@
   .page-header__logo {
     height: 97px;
     width: 186px;
-    background: url("../img/logo-sedona-desktop.svg") no-repeat;
+
     }
 }
 
