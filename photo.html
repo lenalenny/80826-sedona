@@ -6,31 +6,36 @@
     <title>HTML Academy: Седона photo</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="closed-menu">
+  <body class="closed-menu" id="body">
     <div class="page-wrapper">
       <header class="page-header">
-        <div class="menu-icon">
+        <div class="menu-icon" id="menu-icon">
           <span class="menu-icon__decor"></span>
         </div>
         <nav class="main-menu">
           <ul class="main-menu__list">
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Главная</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Фото и видео</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Форма отзыва</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">HTML Academy</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="photo.html">Фото и видео</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-menu__item"><a class="main-menu__link" href="https://htmlacademy.ru/">HTML Academy</a></li>
           </ul>
         </nav>
-        <div class="page-header__logo">Sedona</div>
+        <a href="index.html" class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="page-header__img" src="img/logo-sedona-mobile.svg" alt="Sedona">
+          </picture>
+        </a>
       </header>
       <main class="main-content">
         <div class="main-banner main-banner--inner">
           <img class="main-banner__sedona-text" src="img/text-sedona.svg" alt="Седона" width="320" height="215">
-           <svg class="main-banner__angles" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         width="320px" height="26.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111"
-         xml:space="preserve">
-          <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57 "/>
-          <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056 "/>
-          </svg>
+          <picture>
+            <source media="(min-width: 1190px)" srcset="img/bg-intro-triangle-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+            <img class="main-banner__angles" src="img/bg-intro-triangle-mobile.svg" alt="Баннер">
+          </picture>
         </div>
         <section class="page-info page-info--inner page-info--photo">
           <h1 class="page-info__title">Фото и видео</h1>
@@ -39,7 +44,11 @@
         <ul class="posts">
           <li class="post">
             <div class="post__img-wrap post__img-wrap--main">
-              <img class="post__img" src="img/photo-1-mobile.jpg" alt="Народные просторы">
+            <picture>
+              <source media="(min-width: 1190px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="post__img" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Народные просторы">
+            </picture>
             </div>
             <div class="post__description">
               <h2 class="post__title">Неродные просторы</h2>
@@ -66,7 +75,11 @@
           </li>
           <li class="post">
             <div class="post__img-wrap">
-              <img class="post__img" src="img/photo-2-mobile.jpg" alt="Народные просторы">
+              <picture>
+                <source media="(min-width: 1190px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+                <img class="post__img" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Растительность">
+              </picture>
             </div>
             <div class="post__description">
               <h2 class="post__title">Местная растительность</h2>
@@ -93,7 +106,11 @@
           </li>
           <li class="post">
             <div class="post__img-wrap">
-              <img class="post__img" src="img/photo-3-mobile.jpg" alt="Неродные просторы">
+              <picture>
+                <source media="(min-width: 1190px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+                <img class="post__img" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Дорога">
+              </picture>
             </div>
             <div class="post__description">
               <h2 class="post__title">Дорога на север</h2>
@@ -120,7 +137,11 @@
           </li>
           <li class="post">
             <div class="post__img-wrap">
-              <img class="post__img" src="img/photo-4-mobile.jpg" alt="Народные просторы">
+              <picture>
+                <source media="(min-width: 1190px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+                <img class="post__img" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Мост">
+              </picture>
             </div>
             <div class="post__description">
               <h2 class="post__title">Мост дьявола</h2>
@@ -151,7 +172,11 @@
           <div class="sedona-video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</div>
           <div class="sedona-video__clip">
             <div class="sedona-video__img-wrap">
-              <img class="sedona-video__img" src="img/video-mobile.jpg" alt="Видео">
+              <picture>
+                <source media="(min-width: 1190px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="sedona-video__img" src="img/video-mobile.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
+              </picture>
             </div>
             <div class="sedona-video__controls">
               <div class="sedona-video__play-control">
@@ -250,7 +275,7 @@
     </address>
   </footer>
     </div>
-    <script src="js/jquery.js"></script>
+
     <script src="js/main.js"></script>
   </body>
 </html>

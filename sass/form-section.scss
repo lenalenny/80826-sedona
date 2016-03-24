@@ -67,7 +67,7 @@ padding-top: 45px;
 }
 
 .form-section__info--contact .form-section__value {
-  padding-top: $form-mobile-padding/2;
+  margin-top: $form-mobile-padding/2;
 }
 
 .form-section__text--choose {
@@ -80,14 +80,25 @@ padding-top: 45px;
 
 }
 
+.form-section__input-text--phone,
+.form-section__input-text--email {
+  width: 80%;
+}
+
+.form-section__value--email,
+.form-section__value--phone {
+  background: $input-bg;
+}
+
 .form-section__value--phone {
   position: relative;
+
 
   &::after {
     content: "";
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 0px;
     width: 58px;
     height: 56px;
     background-color: $form-contact-bg;
@@ -101,11 +112,12 @@ padding-top: 45px;
 .form-section__value--email {
   position: relative;
 
+
   &::after {
     content: "";
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 0px;
     width: 58px;
     height: 56px;
     background-color: $form-contact-bg;
@@ -415,7 +427,7 @@ padding-top: 45px;
   }
 
   .form-section__info--contact .form-section__value {
-    padding-top: 0;
+    margin-top: 0;
   }
 
   .form-section__value--phone::after,
@@ -426,6 +438,7 @@ padding-top: 45px;
 
   .form-section__value--phone {
     margin-right: 80px;
+    background: $input-bg;
   }
 
   .form-section__input-text--desktop-only {
