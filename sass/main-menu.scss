@@ -53,7 +53,7 @@
 .main-menu__link {
   display: block;
   margin: auto;
-
+  height: 20px;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -73,6 +73,8 @@
     min-height: 55px;
     transform: translate(0,0);
   }
+
+
   .main-menu__item {
     width: 20%;
   }

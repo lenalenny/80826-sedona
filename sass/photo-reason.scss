@@ -34,12 +34,12 @@
     flex-direction: row-reverse;
   }
   .photo-reason {
-    min-height: 257px;
+    height: 257px;
   }
 }
 
 @media (min-width: 1095px) and (max-width: 1200px) {
   .photo-reason {
-    min-height: 262px;
+    height: 262px;
 }
 }

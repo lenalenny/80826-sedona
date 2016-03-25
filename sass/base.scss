@@ -33,16 +33,34 @@ body {
   background: #f2f2f2;
 }
 
-input:-moz-placeholder {
+input::-moz-placeholder {
   color: black;
 }
 input::-webkit-input-placeholder {
   color: black;
 }
-textarea:-moz-placeholder {
+textarea::-moz-placeholder {
     color: black;
 }
 textarea::-webkit-input-placeholder {
+  color: black;
+}
+
+
+textarea::placeholder {
+  color: black;
+}
+
+input::placeholder {
+  color: black;
+}
+
+
+textarea:-ms-input-placeholder {
+  color: black;
+}
+
+input:-ms-input-placeholder {
   color: black;
 }
 

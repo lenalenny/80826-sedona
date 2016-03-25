@@ -105,7 +105,7 @@ padding-top: 45px;
   position: relative;
 
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     right: 0;
@@ -124,7 +124,7 @@ padding-top: 45px;
   position: relative;
 
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     right: 0;
@@ -153,8 +153,9 @@ padding-top: 45px;
 
 .form-section__text--radio {
 
-  &::before {
+  &:before {
     content: "";
+    display: block;
     width: 60px;
     height: 60px;
     margin-right: 18px;
@@ -163,9 +164,10 @@ padding-top: 45px;
 
   }
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
+    display: block;
     left: 15px;
     top: 15px;
     opacity: 0;
@@ -191,7 +193,7 @@ padding-top: 45px;
 
 
 
-.form-section__input-radio:checked ~ .form-section__text--radio::after {
+.form-section__input-radio:checked ~ .form-section__text--radio:after {
     content: "";
     opacity: 1;
 }
@@ -205,8 +207,9 @@ padding-top: 45px;
 }
 
 .form-section__text--check {
-  &::before {
+  &:before {
     content: "";
+    display: block;
     width: 56px;
     height: 57px;
     margin-right: 22px;
@@ -214,11 +217,12 @@ padding-top: 45px;
     border-radius: 5px;
   }
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     top: 0px;
     left: 0;
+    display: block;
     width: 56px;
     height: 57px;
     margin-right: 22px;
@@ -244,7 +248,7 @@ padding-top: 45px;
   }
 }
 
-.form-section__input-checkbox:checked ~ .form-section__text--check::after {
+.form-section__input-checkbox:checked ~ .form-section__text--check:after {
     content: "";
     opacity: 1;
 
@@ -350,16 +354,18 @@ padding-top: 45px;
     display: flex;
     align-items: center;
 
-    &::before {
+    &:before {
     content: "";
+    display: block;
     flex-grow: 1;
     margin-right: 10%;
     width: 15%;
     border-top: 1px solid #e5e5e5;
-
     }
-    &::after {
+
+    &:after {
     content: "";
+    display: block;
     flex-grow: 1;
     margin-left: 10%;
     width: 15%;
@@ -484,8 +490,8 @@ padding-top: 45px;
     margin-top: 0;
   }
 
-  .form-section__value--phone::after,
-  .form-section__value--email::after
+  .form-section__value--phone:after,
+  .form-section__value--email:after
    {
     top: 0;
   }
@@ -512,10 +518,10 @@ padding-top: 45px;
     padding: 37px 0 0 81px;
   }
 
-  .form-section__title--line::after {
+  .form-section__title--line:after {
     margin-left: 15%;
   }
-  .form-section__title--line::before {
+  .form-section__title--line:before {
     margin-right: 15%;
   }
 
