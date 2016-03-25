@@ -15,6 +15,18 @@
   cursor: pointer;
 
   display:flex;
+
+  &:hover {
+    background: $btn-hvr;
+  }
+
+  &:active {
+    background: $btn-down;
+  }
+
+  &:active .social__icon {
+    fill: $btn-down-text;
+  }
 }
 
 .social__icon {

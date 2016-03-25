@@ -37,13 +37,25 @@
 }
 
 .form-section__input-text {
-  height: 55px;
+  height: 56px;
   background: $input-bg;
   border: none;
   font-weight: bold;
   font-size: 18px;
   color: black;
   text-indent: 20px;
+  box-sizing: border-box;
+
+  &:hover {
+    background: $input-hvr;
+  }
+
+  &:active,
+  &:focus {
+    background: white;
+    border: 4px solid $input-bg;
+    text-indent: 16px;
+  }
 
 }
 
@@ -82,13 +94,12 @@ padding-top: 45px;
 
 .form-section__input-text--phone,
 .form-section__input-text--email {
-  width: 80%;
+  width: calc(100% - 58px);
+  background: $input-bg;
+
 }
 
-.form-section__value--email,
-.form-section__value--phone {
-  background: $input-bg;
-}
+
 
 .form-section__value--phone {
   position: relative;
@@ -141,6 +152,7 @@ padding-top: 45px;
 }
 
 .form-section__text--radio {
+
   &::before {
     content: "";
     width: 60px;
@@ -148,21 +160,36 @@ padding-top: 45px;
     margin-right: 18px;
     background: $input-bg;
     border-radius: 50%;
+
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    background: $form-dot;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  &:hover:before {
+      background: $input-hvr;
+  }
+
+  &:active:before {
+      background: $input-down;
+  }
+
+  &:active:after {
+      background: $input-down-text;
   }
 }
 
-.form-section__text--radio::after {
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  opacity: 0;
-  width: 30px;
-  height: 30px;
-  background: $form-dot;
-  border-radius: 50%;
-  transition: all 0.3s;
-}
+
 
 .form-section__input-radio:checked ~ .form-section__text--radio::after {
     content: "";
@@ -201,7 +228,19 @@ padding-top: 45px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     opacity: 0;
-    transition: all 0.3s;
+    transition: opacity 0.3s;
+  }
+
+  &:hover:before {
+      background: $input-hvr;
+  }
+
+  &:active:before {
+      background: $input-down;
+  }
+
+  &:active:after {
+      background-image: url("../img/icon-tick1.svg");
   }
 }
 
@@ -236,6 +275,21 @@ padding-top: 45px;
   }
   .form-section__label--desktop {
     display: none;
+  }
+
+
+  .form-section__value--phone {
+    background: $input-bg;
+    &:hover {
+      background: $input-hvr;
+    }
+  }
+
+  .form-section__value--email {
+    background: $input-bg;
+     &:hover {
+      background: $input-hvr;
+    }
   }
 
 @media (min-width: $tablet-width) {
@@ -441,6 +495,10 @@ padding-top: 45px;
     background: $input-bg;
   }
 
+  .form-section__value--email {
+    background: $input-bg;
+  }
+
   .form-section__input-text--desktop-only {
     display: block;
   }
@@ -489,5 +547,7 @@ padding-top: 45px;
   .form-section__label--desktop {
     display: block;
   }
+
+
 
 }

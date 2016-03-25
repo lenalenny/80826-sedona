@@ -10,4 +10,47 @@
   background: $blue;
   cursor: pointer;
   border: none;
+
+  &:hover {
+    background: $btn-hvr;
+  }
+
+  &:active {
+    background: $btn-down;
+    color: $btn-down-text;
+  }
+}
+
+.button--disabled {
+  background: $btn-down-disabled;
+
+   &:hover {
+    background: $btn-down-disabled;
+  }
+
+  &:active {
+    background: $btn-down-disabled;
+    color: white;
+  }
+}
+
+@keyframes progress {
+    0% {
+        background-color: $btn-progress1;
+      }
+
+    50% {
+        background-color: $btn-progress2;
+    }
+
+    100% {
+        background-color: $btn-progress1;
+    }
+}
+
+.button--progress {
+    animation-name: progress;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }

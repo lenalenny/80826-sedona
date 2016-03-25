@@ -116,6 +116,14 @@
 .sedona-video__icon {
   margin: auto;
   fill: #5c6870;
+
+  &:hover {
+    fill: $control-hvr;
+  }
+
+  &:active {
+    fill: $control-down;
+  }
 }
 
 .sedona-video__icons-right {
