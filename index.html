@@ -252,19 +252,14 @@
 <script>
 function initMap() {
   // Create a map object and specify the DOM element for display.
-
-
   var myLatLng = {lat: 35.050488, lng: -111.759573};
-
   // Create a map object and specify the DOM element for display.
   var map = new google.maps.Map(document.getElementById('map__google'), {
     center: myLatLng,
     scrollwheel: false,
     zoom: 7
   });
-
   // Create a marker and set its position.
-
   var image = 'img/icon-map-marker.svg';
   var marker = new google.maps.Marker({
     map: map,
@@ -272,10 +267,7 @@ function initMap() {
     title: 'Sedona',
     icon: image
   });
-
 }
-
-
 </script>
 <script src="js/main.js"></script>
 </body>
