@@ -37,13 +37,25 @@
 }
 
 .form-section__input-text {
-  height: 55px;
+  height: 56px;
   background: $input-bg;
   border: none;
   font-weight: bold;
   font-size: 18px;
   color: black;
   text-indent: 20px;
+  box-sizing: border-box;
+
+  &:hover {
+    background: $input-hvr;
+  }
+
+  &:active,
+  &:focus {
+    background: white;
+    border: 4px solid $input-bg;
+    text-indent: 16px;
+  }
 
 }
 
@@ -82,19 +94,18 @@ padding-top: 45px;
 
 .form-section__input-text--phone,
 .form-section__input-text--email {
-  width: 80%;
+  width: calc(100% - 58px);
+  background: $input-bg;
+
 }
 
-.form-section__value--email,
-.form-section__value--phone {
-  background: $input-bg;
-}
+
 
 .form-section__value--phone {
   position: relative;
 
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     right: 0;
@@ -113,7 +124,7 @@ padding-top: 45px;
   position: relative;
 
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     right: 0;
@@ -141,30 +152,48 @@ padding-top: 45px;
 }
 
 .form-section__text--radio {
-  &::before {
+
+  &:before {
     content: "";
+    display: block;
     width: 60px;
     height: 60px;
     margin-right: 18px;
     background: $input-bg;
     border-radius: 50%;
+
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 15px;
+    top: 15px;
+    opacity: 0;
+    width: 30px;
+    height: 30px;
+    background: $form-dot;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+
+  &:hover:before {
+      background: $input-hvr;
+  }
+
+  &:active:before {
+      background: $input-down;
+  }
+
+  &:active:after {
+      background: $input-down-text;
   }
 }
 
-.form-section__text--radio::after {
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 15px;
-  opacity: 0;
-  width: 30px;
-  height: 30px;
-  background: $form-dot;
-  border-radius: 50%;
-  transition: all 0.3s;
-}
 
-.form-section__input-radio:checked ~ .form-section__text--radio::after {
+
+.form-section__input-radio:checked ~ .form-section__text--radio:after {
     content: "";
     opacity: 1;
 }
@@ -178,8 +207,9 @@ padding-top: 45px;
 }
 
 .form-section__text--check {
-  &::before {
+  &:before {
     content: "";
+    display: block;
     width: 56px;
     height: 57px;
     margin-right: 22px;
@@ -187,11 +217,12 @@ padding-top: 45px;
     border-radius: 5px;
   }
 
-  &::after {
+  &:after {
     content: "";
     position: absolute;
     top: 0px;
     left: 0;
+    display: block;
     width: 56px;
     height: 57px;
     margin-right: 22px;
@@ -201,11 +232,23 @@ padding-top: 45px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     opacity: 0;
-    transition: all 0.3s;
+    transition: opacity 0.3s;
+  }
+
+  &:hover:before {
+      background: $input-hvr;
+  }
+
+  &:active:before {
+      background: $input-down;
+  }
+
+  &:active:after {
+      background-image: url("../img/icon-tick1.svg");
   }
 }
 
-.form-section__input-checkbox:checked ~ .form-section__text--check::after {
+.form-section__input-checkbox:checked ~ .form-section__text--check:after {
     content: "";
     opacity: 1;
 
@@ -236,6 +279,21 @@ padding-top: 45px;
   }
   .form-section__label--desktop {
     display: none;
+  }
+
+
+  .form-section__value--phone {
+    background: $input-bg;
+    &:hover {
+      background: $input-hvr;
+    }
+  }
+
+  .form-section__value--email {
+    background: $input-bg;
+     &:hover {
+      background: $input-hvr;
+    }
   }
 
 @media (min-width: $tablet-width) {
@@ -296,16 +354,18 @@ padding-top: 45px;
     display: flex;
     align-items: center;
 
-    &::before {
+    &:before {
     content: "";
+    display: block;
     flex-grow: 1;
     margin-right: 10%;
     width: 15%;
     border-top: 1px solid #e5e5e5;
-
     }
-    &::after {
+
+    &:after {
     content: "";
+    display: block;
     flex-grow: 1;
     margin-left: 10%;
     width: 15%;
@@ -430,14 +490,18 @@ padding-top: 45px;
     margin-top: 0;
   }
 
-  .form-section__value--phone::after,
-  .form-section__value--email::after
+  .form-section__value--phone:after,
+  .form-section__value--email:after
    {
     top: 0;
   }
 
   .form-section__value--phone {
     margin-right: 80px;
+    background: $input-bg;
+  }
+
+  .form-section__value--email {
     background: $input-bg;
   }
 
@@ -454,10 +518,10 @@ padding-top: 45px;
     padding: 37px 0 0 81px;
   }
 
-  .form-section__title--line::after {
+  .form-section__title--line:after {
     margin-left: 15%;
   }
-  .form-section__title--line::before {
+  .form-section__title--line:before {
     margin-right: 15%;
   }
 
@@ -489,5 +553,7 @@ padding-top: 45px;
   .form-section__label--desktop {
     display: block;
   }
+
+
 
 }

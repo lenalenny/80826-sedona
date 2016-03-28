@@ -35,6 +35,18 @@
   width: 40px;
 }
 
+.page-footer__academy-svg {
+  fill: black;
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    fill: $logo-down;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     height: 110px;
