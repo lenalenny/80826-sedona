@@ -1,7 +1,3 @@
-.sedona-video {
-
-}
-
 .sedona-video__title {
   @include no-mp;
   padding-top: 30px;
@@ -48,7 +44,6 @@
   padding: 0 $form-mobile-padding;
   margin-top: -45px;
   z-index: 10;
-
 }
 
 .sedona-video__play-control {
@@ -70,9 +65,8 @@
     left: 0;
     z-index: -1;
     background: $input-bg;
-
-
   }
+
 }
 
 .sedona-video__line {
@@ -124,6 +118,7 @@
   &:active {
     fill: $control-down;
   }
+
 }
 
 .sedona-video__icons-right {
@@ -134,9 +129,8 @@
   margin-bottom: 40px;
 }
 
-
-
 @media (min-width: $tablet-width) {
+
   .sedona-video {
     margin-top: 30px;
     margin-bottom: 45px;
@@ -169,6 +163,7 @@
       display: none;
     }
   }
+
   .sedona-video__icon {
     fill: white;
   }
@@ -180,6 +175,7 @@
     z-index: 10;
     background: rgba(0,0,0,0.5);
   }
+
   .sedona-video__play-control {
     background: none;
     flex-grow: 1;
@@ -204,26 +200,31 @@
     height: 95px;
     width: 70px;
   }
+
   .sedona-video__icons-right {
     margin-left: 22px;
   }
 
-
 }
 
 @media (min-width: $desktop-width) {
+
   .sedona-video {
     margin-top: 35px;
-    }
+  }
+
   .sedona-video__description {
     padding: 24px 30% 0 30%;
   }
+
   .sedona-video__clip {
     margin-top: 74px;
     padding-left: 16.5%;
     padding-right: 16.5%;
   }
+
   .sedona-video {
     margin-bottom: 82px;
   }
+
 }

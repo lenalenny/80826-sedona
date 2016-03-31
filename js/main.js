@@ -1,13 +1,12 @@
-var menuBtn = document.getElementById('menu-icon');
-var menuContainer = document.getElementById('body');
+var menuBtn = document.getElementById("menu-icon");
+var menuContainer = document.getElementById("body");
 
 var menuContClosed = "closed-menu";
 var menuContOpened = "opened-menu";
 var withoutJS = "without-js";
 
-
 if (menuContainer.className == withoutJS) {
-menuContainer.className = menuContClosed;
+  menuContainer.className = menuContClosed;
 }
 
 
@@ -19,7 +18,7 @@ menuBtn.onclick = function() {
   }
 }
 
-document.createElement( "picture" );
+document.createElement("picture");
 
 /*! picturefill - v3.0.2 - 2016-02-12
  * https://scottjehl.github.io/picturefill/

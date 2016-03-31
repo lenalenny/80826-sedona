@@ -3,11 +3,9 @@
   height: 390px;
   width: 100%;
   text-align: center;
-
   background: url("../img/bg-back-mobile.jpg") 50% 50% no-repeat;
   background-size: cover;
   overflow: hidden;
-
 }
 
 .main-banner__index-text {
@@ -36,23 +34,24 @@
 }
 
 @media (min-resolution: 144dpi),
-        (min-resolution: 1.5dppx) {
+      (min-resolution: 1.5dppx) {
         .main-banner {
           background-image: url("../img/bg-back-mobile@2x.jpg");
           }
         }
 
-
-
 @media (min-width: $tablet-width) {
+
   .main-banner {
     height: 520px;
   }
+
   .main-banner__index-text {
     width: 460px;
     margin-top: 79px;
   }
-    .main-banner--inner {
+
+  .main-banner--inner {
     height: 290px;
   }
 
@@ -62,8 +61,8 @@
 }
 
   .main-banner {
-          background-image: url("../img/bg-back-desktop.jpg");
-        }
+    background-image: url("../img/bg-back-desktop.jpg");
+  }
 
 @media (min-resolution: 144dpi),
         (min-resolution: 1.5dppx) {
@@ -75,12 +74,14 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .main-banner--inner {
     height: 300px;
   }
+
   .main-banner__sedona-text {
     margin-top: 100px;
-}
+  }
 
 }
 

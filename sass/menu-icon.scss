@@ -4,13 +4,10 @@
   right: 20px;
   margin-top: -7px;
   z-index: 250;
-
   width: 23px;
   height: 21px;
-
   text-transform: uppercase;
   color: transparent;
-
   cursor: pointer;
 }
 
@@ -18,13 +15,12 @@
   display: none;
 }
 
-
 .menu-icon__decor {
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: $blue;
-    transition: all 0.3s ease-in-out;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $blue;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-icon::before,
@@ -66,7 +62,9 @@
     transform: translate(0px, -3px) rotate(-45deg);
 }
 @media (min-width: $tablet-width) {
+
   .menu-icon {
     display: none;
   }
+
 }

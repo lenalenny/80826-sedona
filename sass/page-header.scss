@@ -2,17 +2,17 @@
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: $header-height-mobile;
-
 }
 
 @media (max-width: $mobile-widths-only) {
+
 .without-js .page-header {
   position: static;
   height: 222px;
-}
+  }
+
 }
 
 .page-header__logo {
@@ -27,10 +27,13 @@
   text-align: center;
   font-size: 0;
 }
+
 @media (max-width: $mobile-widths-only) {
-.without-js .page-header__logo {
-  margin-top: 222px;
-}
+
+  .without-js .page-header__logo {
+    margin-top: 222px;
+  }
+
 }
 
 .page-header__img {
@@ -38,6 +41,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .page-header {
     height: $header-height-tablet;
   }
@@ -45,13 +49,15 @@
    z-index: 400;
 
   }
+
 }
 
 @media (min-width: $desktop-width) {
+
   .page-header__logo {
     height: 97px;
     width: 186px;
-
     }
+
 }
 

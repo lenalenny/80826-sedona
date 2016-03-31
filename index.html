@@ -190,9 +190,6 @@
     </div>
     <div class="map">
       <div class="map__wrap">
-      <!--
-        <img class="map__img" id="map__img" src="img/bg-map.jpg" alt="Карта">
-        -->
         <div class="map__google" id="map__google"></div>
         <div class="map__pointer"></div>
       </div>
@@ -245,26 +242,24 @@
   </footer>
 </div>
 
-
-<script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaEx3asKWmkVYbxfS-FEvKbgECr_5Wai0&callback=initMap">
-    </script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaEx3asKWmkVYbxfS-FEvKbgECr_5Wai0&callback=initMap">
+</script>
 <script>
 function initMap() {
   // Create a map object and specify the DOM element for display.
   var myLatLng = {lat: 35.050488, lng: -111.759573};
   // Create a map object and specify the DOM element for display.
-  var map = new google.maps.Map(document.getElementById('map__google'), {
+  var map = new google.maps.Map(document.getElementById("map__google"), {
     center: myLatLng,
     scrollwheel: false,
     zoom: 7
   });
   // Create a marker and set its position.
-  var image = 'img/icon-map-marker.svg';
+  var image = "img/icon-map-marker.svg";
   var marker = new google.maps.Marker({
     map: map,
     position: myLatLng,
-    title: 'Sedona',
+    title: "Sedona",
     icon: image
   });
 }
