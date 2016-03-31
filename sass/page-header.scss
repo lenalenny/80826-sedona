@@ -8,6 +8,13 @@
 
 }
 
+@media (max-width: $mobile-widths-only) {
+.without-js .page-header {
+  position: static;
+  height: 222px;
+}
+}
+
 .page-header__logo {
   position: absolute;
   top: 0;
@@ -19,6 +26,11 @@
   margin: 0;
   text-align: center;
   font-size: 0;
+}
+@media (max-width: $mobile-widths-only) {
+.without-js .page-header__logo {
+  margin-top: 222px;
+}
 }
 
 .page-header__img {

@@ -10,6 +10,12 @@
 
 }
 
+@media (max-width: $mobile-widths-only) {
+.without-js .page-wrapper  {
+  padding-top: 0;
+}
+}
+
 @media (min-width: $tablet-width) {
 
 }

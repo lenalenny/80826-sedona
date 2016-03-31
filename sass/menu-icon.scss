@@ -14,6 +14,10 @@
   cursor: pointer;
 }
 
+.without-js .menu-icon {
+  display: none;
+}
+
 
 .menu-icon__decor {
     display: block;

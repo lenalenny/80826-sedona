@@ -5,10 +5,18 @@
   z-index: 200;
 
   width: 100%;
-  min-height: 222px;
+  height: 222px;
 
   transition: all 0.3s;
   transform: translateY(-100%);
+}
+
+@media (max-width: $mobile-widths-only) {
+.without-js .main-menu {
+  position: static;
+  display: block;
+  transform: translateY(0%);
+}
 }
 
 .opened-menu .main-menu {

@@ -118,6 +118,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .post {
     width: 33.3%;
     position: relative;
@@ -142,5 +143,6 @@
   .post__svg {
     fill: white;
   }
+
 }
 

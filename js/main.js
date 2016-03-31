@@ -3,6 +3,13 @@ var menuContainer = document.getElementById('body');
 
 var menuContClosed = "closed-menu";
 var menuContOpened = "opened-menu";
+var withoutJS = "without-js";
+
+
+if (menuContainer.className == withoutJS) {
+menuContainer.className = menuContClosed;
+}
+
 
 menuBtn.onclick = function() {
   if (menuContainer.className == menuContClosed) {
