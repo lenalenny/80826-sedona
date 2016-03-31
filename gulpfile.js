@@ -13,7 +13,7 @@ var imagemin = require("gulp-imagemin");
 var jsmin = require('gulp-jsmin');
 var clean = require('gulp-clean');
 
-gulp.task("style", ["copy", "minjs", "img-optimization" ], function() {
+gulp.task("style", function() {
   gulp.src("sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -29,10 +29,7 @@ gulp.task("style", ["copy", "minjs", "img-optimization" ], function() {
         sort: true
       })
     ]))
-    .pipe(gulp.dest("build/css"))
-    .pipe(minify())
-    .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("css"))
     .pipe(server.reload({stream: true}));
 });
 
@@ -46,6 +43,7 @@ gulp.task("copy", ["clean"], function() {
   gulp.src('fonts/**/*.{woff,woff2}').pipe(gulp.dest('build/fonts'));
   gulp.src('img/**.{png,jpg,gif,svg}').pipe(gulp.dest('build/img'));
   gulp.src('js/**.js').pipe(gulp.dest('build/js'));
+  gulp.src('css/**.css').pipe(gulp.dest('build/css'));
 });
 
 gulp.task("minjs", ["copy"], function() {
@@ -53,6 +51,13 @@ gulp.task("minjs", ["copy"], function() {
         .pipe(jsmin())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('build/js'))
+});
+
+gulp.task("mincss", ["copy"], function() {
+  return gulp.src('buils/сss/*.css')
+    .pipe(minify())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
 });
 
 gulp.task("img-optimization", ["copy"], function() {
@@ -67,14 +72,18 @@ gulp.task("img-optimization", ["copy"], function() {
 
 gulp.task("serve", ["style"], function() {
   server.init({
-    server: "build",
+    server: ".",
     notify: false,
     open: true,
     ui: false
   });
 
-  gulp.watch("css/**/*.css", ["style"]);
+  gulp.watch("sass/**/*.{scss, sass}", ["style"]);
   gulp.watch("*.html").on("change", server.reload);
+});
+
+
+gulp.task("build", ["clean", "copy", "minjs", "mincss", "img-optimization"], function() {
 });
 
 
