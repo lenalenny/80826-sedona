@@ -41,6 +41,10 @@ input::-webkit-input-placeholder {
   color: black;
 }
 
+input::placeholder {
+  color: black;
+}
+
 textarea::-moz-placeholder {
     color: black;
 }
@@ -53,9 +57,7 @@ textarea::placeholder {
   color: black;
 }
 
-input::placeholder {
-  color: black;
-}
+
 
 textarea:-ms-input-placeholder {
   color: black;

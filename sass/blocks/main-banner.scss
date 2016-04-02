@@ -3,7 +3,7 @@
   height: 390px;
   width: 100%;
   text-align: center;
-  background: url("../img/bg-back-mobile.jpg") 50% 50% no-repeat;
+  background: #a8a9bd url("../img/bg-back-mobile.jpg") 50% 50% no-repeat;
   background-size: cover;
   overflow: hidden;
 }
@@ -58,10 +58,14 @@
   .main-banner__sedona-text {
     width: 460px;
     margin-top: 95px;
-}
+  }
 
   .main-banner {
     background-image: url("../img/bg-back-desktop.jpg");
+  }
+
+  .main-banner__angles {
+    height: auto;
   }
 
 @media (min-resolution: 144dpi),

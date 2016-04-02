@@ -17,7 +17,7 @@
   padding: 15px 30px 40px 30px;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 50%;
@@ -30,7 +30,7 @@
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 50%;
@@ -51,12 +51,14 @@
 .reason__title {
   font-size: 18px;
   margin: 24px 0 10px 0;
+  overflow: hidden;
 }
 
 .reason__description {
   padding-top: 15px;
   font-size: 14px;
   line-height: 21px;
+  overflow: hidden;
 }
 
 .reason--small {
