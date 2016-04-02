@@ -1,7 +1,3 @@
-.map {
-
-}
-
 .map__wrap {
   position: relative;
   height: 350px;
@@ -20,4 +16,8 @@
 .map__google {
   width: 100%;
   height: 100%;
+}
+
+.map__img--nomap {
+  display: none;
 }

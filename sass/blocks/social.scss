@@ -9,11 +9,8 @@
   width: 46px;
   height: 48px;
   margin-right: 7px;
-
   background: $blue;
-
   cursor: pointer;
-
   display:flex;
 
   &:hover {
@@ -27,6 +24,7 @@
   &:active .social__icon {
     fill: $btn-down-text;
   }
+
 }
 
 .social__icon {

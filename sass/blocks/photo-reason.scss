@@ -1,14 +1,12 @@
 .photo-reason {
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .photo-reason__img-wrap {
   position:relative;
   flex-grow: 1;
   min-width:320px;
-
   overflow: hidden;
 }
 
@@ -16,30 +14,35 @@
   position: absolute;
   left: 50%;
   top: 50%;
-
   min-width:100%;
   min-height:100%;
-
   transform: translate(-50%, -50%);
 }
 
 @media (max-width: $mobile-widths-only) {
+
   .photo-reason__img-wrap {
     height: 260px;
   }
+
 }
 
 @media (min-width: $tablet-width) {
+
   .photo-reason--reverse{
     flex-direction: row-reverse;
   }
+
   .photo-reason {
     height: 257px;
   }
+
 }
 
 @media (min-width: 1095px) and (max-width: 1200px) {
+
   .photo-reason {
     height: 262px;
-}
+  }
+
 }

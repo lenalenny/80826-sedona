@@ -2,10 +2,8 @@
   padding: 0 $main-padding-mobile;
   margin-top: 40px;
   margin-bottom: 30px;
-
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .page-info--photo {
@@ -14,16 +12,18 @@
 
 .page-info--photo .page-info__description {
     padding-top: 12px;
-  }
+}
 
 .page-info__title {
   font-size: 18px;
+  overflow: hidden;
 }
 
 .page-info__description {
   padding-top: 20px;
   font-size: 14px;
   line-height: 24px;
+  overflow: hidden;
 }
 
 .page-info--inner {
@@ -33,27 +33,31 @@
 }
 
 .page-info--inner .page-info__description {
-    padding-top: 15px;
+  padding-top: 15px;
 }
 
-
 @media (min-width: $tablet-width) {
+
   .page-info {
     padding: 0 9%;
     margin-top: 48px;
     margin-bottom: 50px;
   }
+
   .page-info__title {
     font-size: 22px;
     line-height: 25px;
   }
+
   .page-info__description {
     padding-top: 14px;
   }
+
   .page-info--inner {
     padding: 0 18%;
     margin-top: 75px;
   }
+
   .page-info--inner .page-info__title {
     font-size: 30px;
   }
@@ -70,18 +74,23 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .page-info {
     padding: 0 24%;
   }
+
   .page-info--inner {
     padding: 0 18%;
     margin-top: 114px;
   }
+
   .page-info {
     margin-bottom: 35px;
   }
+
   .page-info--photo {
     padding-left: 29%;
     padding-right: 29%;
   }
+
 }

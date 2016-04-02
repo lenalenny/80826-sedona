@@ -18,16 +18,19 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .review-form__required {
     display: block;
     margin-left: auto;
   }
+
   .review-form__button-wrap {
     padding-left: 8%;
     padding-right: 8%;
   }
+
   .review-form {
-  margin-bottom: 45px;
+    margin-bottom: 45px;
   }
 
   .review-form__button {

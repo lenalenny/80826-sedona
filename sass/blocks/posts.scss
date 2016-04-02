@@ -1,0 +1,26 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid $form-border;
+}
+
+@media (min-width: $tablet-width) {
+
+  .posts {
+    margin-top: 71px;
+    padding-left: $main-padding-tablet;
+    padding-right: $main-padding-tablet;
+    border-bottom: none;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .posts {
+    margin-top: 71px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}

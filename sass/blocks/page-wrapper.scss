@@ -1,15 +1,15 @@
 .page-wrapper {
   @include container;
   position:relative;
-
   padding-top: $header-height-mobile;
-
   background: white;
   box-shadow: 0 0 30px -5px #444;
   overflow: hidden;
-
 }
 
-@media (min-width: $tablet-width) {
+@media (max-width: $mobile-widths-only) {
 
+  .without-js .page-wrapper  {
+    padding-top: 0;
+  }
 }

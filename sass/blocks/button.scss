@@ -19,6 +19,7 @@
     background: $btn-down;
     color: $btn-down-text;
   }
+
 }
 
 .button--disabled {
@@ -32,6 +33,7 @@
     background: $btn-down-disabled;
     color: white;
   }
+
 }
 
 @keyframes progress {
@@ -49,8 +51,8 @@
 }
 
 .button--progress {
-    animation-name: progress;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+  animation-name: progress;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
