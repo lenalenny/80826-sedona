@@ -16,11 +16,12 @@
 
 .page-info__title {
   font-size: 18px;
+  line-height: 25px;
   overflow: hidden;
 }
 
 .page-info__description {
-  padding-top: 20px;
+  padding-top: 17px;
   font-size: 14px;
   line-height: 24px;
   overflow: hidden;
@@ -41,16 +42,18 @@
   .page-info {
     padding: 0 9%;
     margin-top: 48px;
-    margin-bottom: 50px;
+    margin-bottom: 36px;
   }
 
   .page-info__title {
     font-size: 22px;
-    line-height: 25px;
+    line-height: 26px;
+    margin: 0;
+
   }
 
   .page-info__description {
-    padding-top: 14px;
+    padding-top: 30px;
   }
 
   .page-info--inner {
@@ -71,6 +74,10 @@
     padding-right: 30px;
   }
 
+  .reason--angle {
+    padding-top: 32px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -85,7 +92,7 @@
   }
 
   .page-info {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   .page-info--photo {

@@ -29,12 +29,13 @@
 
 @media (min-width: $tablet-width) {
 
-  .photo-reason--reverse{
-    flex-direction: row-reverse;
+  .photo-reason {
+    height: 270px;
   }
 
-  .photo-reason {
-    height: 257px;
+  .photo-reason--reverse{
+    flex-direction: row-reverse;
+    height: 256px;
   }
 
 }
