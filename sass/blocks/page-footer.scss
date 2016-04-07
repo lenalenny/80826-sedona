@@ -63,6 +63,10 @@
     margin-bottom: 0;
   }
 
+  .page-footer--photo {
+    height: 110px;
+  }
+
   .page-footer__hashtag {
     width: 33.33%;
     @include no-mp;
@@ -103,6 +107,10 @@
   .page-footer__hashtag {
     padding-left: 92px;
     box-sizing: border-box;
+  }
+
+  .page-footer--photo {
+  height: 122px;
   }
 
 }
