@@ -338,16 +338,16 @@
           </g>
           </svg>
         </div>
-        <section class="page-info page-info--inner">
+        <section class="page-info page-info--form page-info--inner">
           <h1 class="page-info__title">Оставьте свой отзыв</h1>
-          <div class="page-info__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</div>
+          <div class="page-info__description page-info__description--form">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.</div>
         </section>
         <form class="review-form" action="form.html" method="POST">
         <section class="form-section">
           <h2 class="form-section__title form-section__title--mobile">Представьтесь, пожалуйста:</h2>
           <h2 class="form-section__title form-section__title--tablet">Представьтесь:</h2>
           <ul class="form-section__input-list">
-            <li class="form-section__input-item">
+            <li class="form-section__input-item  form-section__input-item--name">
               <dl class="form-section__info">
                 <dt class="form-section__key">
                   <label for="input-name" class="form-section__label">Имя:</label>
@@ -357,7 +357,7 @@
                 </dd>
               </dl>
             </li>
-            <li class="form-section__input-item">
+            <li class="form-section__input-item form-section__input-item--surname">
               <dl class="form-section__info">
                 <dt class="form-section__key">
                   <label for="input-surname" class="form-section__label">Фамилия:</label>
@@ -367,7 +367,7 @@
                 </dd>
               </dl>
             </li>
-            <li class="form-section__input-item">
+            <li class="form-section__input-item form-section__input-item--secondname">
               <dl class="form-section__info">
                 <dt class="form-section__key">
                   <label for="input-secondname" class="form-section__label">Отчество:</label>
@@ -386,7 +386,7 @@
               <dl class="form-section__info form-section__info--contact">
                 <dt class="form-section__key">
                   <label for="input-phone" class="form-section__label form-section__label--contact form-section__label--mobile"><span class="form-section__only-mobile">Контактный</span> телефон:</label>
-                  <label for="input-phone1" class="form-section__label form-section__label--contact form-section__label--desktop"><span class="form-section__only-mobile">Контактный</span> телефон:</label>
+                  <label for="input-phone1" class="form-section__label form-section__label--contact  form-section__label--desktop"><span class="form-section__only-mobile">Контактный</span> телефон:</label>
                 </dt>
                 <dd class="form-section__value form-section__value--phone">
                   <input type="tel" class="form-section__input-text form-section__input-text--phone form-section__input-text--mobile-only" id="input-phone" name="input-phone" placeholder="Введите телефон">
@@ -441,7 +441,7 @@
           <ul class="form-section__input-list">
             <li class="form-section__input-item form-section__input-item--check form-section__input-item--bridge">
               <div class="form-section__info">
-                <label class="form-section__label">
+                <label class="form-section__label form-section__label--left">
                   <input class="form-section__input-checkbox" type="checkbox" name="check1" checked>
                   <span class="form-section__text form-section__text--choose form-section__text--check">Мост Дьявола</span>
                 </label>
@@ -449,7 +449,7 @@
             </li>
             <li class="form-section__input-item form-section__input-item--check form-section__input-item--park">
               <div class="form-section__info">
-                <label class="form-section__label">
+                <label class="form-section__label form-section__label--left">
                   <input class="form-section__input-checkbox" type="checkbox" name="check2" checked>
                   <span class="form-section__text form-section__text--choose form-section__text--check">Слайд-парк</span>
                 </label>
@@ -457,7 +457,7 @@
             </li>
             <li class="form-section__input-item form-section__input-item--check form-section__input-item--mountain">
               <div class="form-section__info">
-                <label class="form-section__label">
+                <label class="form-section__label form-section__label--right">
                   <input class="form-section__input-checkbox" type="checkbox" name="check2">
                   <span class="form-section__text form-section__text--choose form-section__text--check">Гора-Колокол</span>
                 </label>
@@ -465,7 +465,7 @@
             </li>
             <li class="form-section__input-item form-section__input-item--check form-section__input-item--red">
               <div class="form-section__info">
-                <label class="form-section__label">
+                <label class="form-section__label form-section__label--right">
                   <input class="form-section__input-checkbox" type="checkbox" name="check4" checked>
                   <span class="form-section__text form-section__text--choose form-section__text--check">Красные скалы</span>
                 </label>
@@ -474,7 +474,7 @@
           </ul>
         </section>
         <section class="form-section">
-          <h2 class="form-section__title form-section__title--line">Опишите свои эмоции:</h2>
+          <h2 class="form-section__title form-section__title--line form-section__title--emotions">Опишите свои эмоции:</h2>
           <div class="form-section__info">
             <textarea class="form-section__textarea" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
@@ -499,7 +499,7 @@
           <button class="button">Закрыть окно</button>
         </div>
       </div>
-      <footer class="page-footer">
+      <footer class="page-footer page-footer--form">
         <div class="page-footer__hashtag">#visitsedona</div>
         <div class="page-footer__social">
           <ul class="social">

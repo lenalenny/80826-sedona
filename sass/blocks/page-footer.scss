@@ -83,11 +83,15 @@
   }
 
   .page-footer__dev {
-  justify-content: flex-end;
+    justify-content: flex-end;
   }
 
   .page-footer__hashtag {
-  text-align: left;
+    text-align: left;
+  }
+
+  .page-footer--form {
+    height: 112px;
   }
 
 }
@@ -109,8 +113,10 @@
     box-sizing: border-box;
   }
 
-  .page-footer--photo {
+  .page-info--inner .page-footer--photo {
   height: 122px;
   }
+
+
 
 }

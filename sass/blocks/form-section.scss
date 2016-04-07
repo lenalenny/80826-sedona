@@ -1,6 +1,6 @@
 .form-section {
   width: 100%;
-  padding: 0 $form-mobile-padding 27px $form-mobile-padding;
+  padding: 0 $form-mobile-padding 24px $form-mobile-padding;
   border-top: 1px solid $form-border;
 }
 
@@ -10,6 +10,7 @@
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
+  line-height: 25px;
   overflow: hidden;
 }
 
@@ -26,7 +27,7 @@
 
 .form-section__input-item {
   position: relative;
-  padding-top: 22px;
+  padding-top: 23px;
 }
 
 .form-section__input-text {
@@ -161,11 +162,11 @@
     content: "";
     position: absolute;
     display: block;
-    left: 15px;
-    top: 15px;
+    left: 20px;
+    top: 20px;
     opacity: 0;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     background: $form-dot;
     border-radius: 50%;
     transition: all 0.3s;
@@ -193,7 +194,7 @@
 }
 
 .form-section__input-item--radio {
-  padding-top: 13px;
+  padding-top: 9px;
 }
 
 .form-section__input-checkbox {
@@ -259,6 +260,7 @@
   font-weight: bold;
   font-size: 18px;
   outline: none;
+  line-height: 26px;
 }
 
 .form-section__title--tablet {
@@ -347,7 +349,25 @@
   background: $input-down;
 }
 
+.form-section__input-item--contact {
+  padding-top: 26px;
+}
 
+.form-section__info--second {
+  padding-top: 46px;
+}
+
+.form-section--contact {
+  padding-bottom: 31px;
+}
+
+.form-section__input-item--radio:first-of-type {
+    padding-top: 22px;
+}
+
+.form-section__input-item--bridge {
+  padding-top: 19px;
+}
 
 
 @media (min-width: $tablet-width) {
@@ -369,7 +389,7 @@
   }
 
   .form-section:nth-of-type(3)   {
-    width: 38%;
+    width: 39%;
   }
 
   .form-section {
@@ -384,18 +404,22 @@
   }
 
   .form-section:nth-of-type(1)   {
-    padding-left: 8%;
+    padding-left: 7%;
     width: 35%;
   }
 
   .form-section:nth-of-type(1) .form-section__title {
     text-align: left;
-    padding-left: 5%;
+    padding-left: 1%;
+  }
+
+  .form-section:nth-of-type(3) .form-section__title {
+    padding-right: 6%;
   }
 
   .form-section__title {
     padding-top: 24px;
-    font-size: 22px;
+    font-size: 21px;
   }
 
   .form-section__input-list {
@@ -403,7 +427,7 @@
   }
 
   .form-section__input-item--radio {
-    padding-top: 20px;
+    padding-top: 18px;
   }
 
   .form-section__title--line {
@@ -439,22 +463,34 @@
   }
 
   .form-section__info--second {
-    padding-top: 25px;
+    padding-top: 27px;
   }
 
   .form-section__error {
     left: 100%;
     top: 0;
-    padding: 23px 0 0 20px;
-    margin-left: -215px;
+    padding: 25px 0 0 20px;
+    margin-left: -216px;
   }
 
   .form-section--places .form-section__input-list {
     display: flex;
     flex-wrap: wrap;
     padding-top: 13px;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .form-section__label--left {
+    padding-left: 36px;
+  }
+
+  .form-section__label--right {
+    padding-left: 32px;
+  }
+
+  .form-section__title--emotions {
+    padding-top: 29px;
   }
 
   .form-section--places .form-section__input-item {
@@ -463,7 +499,7 @@
   }
 
   .form-section--places .form-section__title{
-    padding-top: 10px;
+    padding-top: 16px;
   }
 
   .form-section__input-item--bridge {
@@ -483,8 +519,64 @@
   }
 
   .form-section__textarea {
-    margin-top: 50px;
+    margin-top: 58px;
+    margin-left: 7px;
+    margin-right: 7px;
   }
+
+  .form-section__text--radio:before {
+    margin-right: 22px;
+  }
+
+  .form-section__input-item--radio:first-of-type {
+    padding-top: 25px;
+  }
+
+  .review-form__button-wrap {
+    padding-top: 19px;
+  }
+
+  .review-form__button {
+    text-align: left;
+    padding: 13px 0px 17px 64px;
+  }
+
+  .form-section__input-item--name {
+    padding-top: 29px;
+    padding-left: 3px;
+  }
+
+  .form-section__input-text {
+    text-indent: 22px;
+  }
+
+  .page-footer__hashtag {
+    padding-left: 0px;
+  }
+
+  .form-section__input-item--secondname {
+    padding-top: 22px;
+    padding-left: 3px;
+  }
+
+  .form-section__input-item--surname {
+    padding-top: 21px;
+    padding-left: 3px;
+  }
+
+  .form-section--contact {
+    padding-top: 5px;
+  }
+
+  .form-section__info--contact .form-section__label {
+    padding-left: 28px;
+  }
+
+  .form-section__info--contact .form-section__value {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
 
 }
 

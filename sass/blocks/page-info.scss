@@ -82,6 +82,11 @@
     padding-top: 32px;
   }
 
+  .page-info--inner .page-info__description--form {
+    padding-top: 32px;
+    margin-bottom: 50px;
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -102,6 +107,22 @@
   .page-info--photo {
     padding-left: 29%;
     padding-right: 29%;
+  }
+
+  .page-info--inner .page-info__description--form {
+    padding-left: 21%;
+    padding-right: 21%;
+    padding-top: 30px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+
+  .page-info--form {
+    margin-bottom: 0;
+  }
+
+  .inner .page-info__title {
+    line-height: 26px;
   }
 
 }
