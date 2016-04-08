@@ -8,7 +8,7 @@
   position: relative;
   width: 46px;
   height: 48px;
-  margin-right: 7px;
+  margin-right: 6px;
   background: $blue;
   cursor: pointer;
   display:flex;
@@ -25,6 +25,10 @@
     fill: $btn-down-text;
   }
 
+}
+
+.social__link--youtube {
+  margin-right: 0;
 }
 
 .social__icon {

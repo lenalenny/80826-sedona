@@ -6,9 +6,7 @@
   text-transform: uppercase;
 }
 
-.page-info--photo {
-  padding: 0 $form-mobile-padding;
-}
+
 
 .page-info--photo .page-info__description {
     padding-top: 12px;
@@ -16,11 +14,12 @@
 
 .page-info__title {
   font-size: 18px;
+  line-height: 25px;
   overflow: hidden;
 }
 
 .page-info__description {
-  padding-top: 20px;
+  padding-top: 17px;
   font-size: 14px;
   line-height: 24px;
   overflow: hidden;
@@ -32,6 +31,11 @@
   margin-bottom: 18px;
 }
 
+.page-info--photo {
+  padding: 0 $form-mobile-padding;
+  margin-bottom: 29px;
+}
+
 .page-info--inner .page-info__description {
   padding-top: 15px;
 }
@@ -41,16 +45,18 @@
   .page-info {
     padding: 0 9%;
     margin-top: 48px;
-    margin-bottom: 50px;
+    margin-bottom: 36px;
   }
 
   .page-info__title {
     font-size: 22px;
-    line-height: 25px;
+    line-height: 26px;
+    margin: 0;
+
   }
 
   .page-info__description {
-    padding-top: 14px;
+    padding-top: 30px;
   }
 
   .page-info--inner {
@@ -69,6 +75,16 @@
   .page-info--photo .page-info__description {
     padding-left: 30px;
     padding-right: 30px;
+    padding-top: 30px;
+  }
+
+  .reason--angle {
+    padding-top: 32px;
+  }
+
+  .page-info--inner .page-info__description--form {
+    padding-top: 32px;
+    margin-bottom: 50px;
   }
 
 }
@@ -85,12 +101,28 @@
   }
 
   .page-info {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 
   .page-info--photo {
     padding-left: 29%;
     padding-right: 29%;
+  }
+
+  .page-info--inner .page-info__description--form {
+    padding-left: 21%;
+    padding-right: 21%;
+    padding-top: 30px;
+    line-height: 24px;
+    margin-bottom: 35px;
+  }
+
+  .page-info--form {
+    margin-bottom: 0;
+  }
+
+  .inner .page-info__title {
+    line-height: 26px;
   }
 
 }

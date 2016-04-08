@@ -9,6 +9,7 @@
   width: 100%;
   padding: 20px;
   align-items: center;
+  padding-top: 26px;
 }
 
 .review-form__required {
@@ -35,6 +36,15 @@
 
   .review-form__button {
     width: 50%;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .review-form__button {
+    padding: 15px 0;
+    text-align: center;
+
   }
 
 }

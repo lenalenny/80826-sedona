@@ -4,6 +4,7 @@
   text-transform: uppercase;
   text-align: center;
   font-size: 18px;
+  line-height: 26px;
 }
 
 .sedona-video__description {
@@ -131,6 +132,10 @@
 
 @media (min-width: $tablet-width) {
 
+  .sedona-video__slider {
+    margin-left: 29%;
+  }
+
   .sedona-video {
     margin-top: 30px;
     margin-bottom: 45px;
@@ -138,6 +143,7 @@
 
   .sedona-video__title {
     font-size: 30px;
+    line-height: 38px;
   }
 
   .sedona-video__description {
@@ -170,8 +176,8 @@
 
   .sedona-video__controls {
     padding: 0;
-    height: 95px;
-    margin-top: -95px;
+    height: 92px;
+    margin-top: -92px;
     z-index: 10;
     background: rgba(0,0,0,0.5);
   }
@@ -225,6 +231,11 @@
 
   .sedona-video {
     margin-bottom: 82px;
+  }
+
+  .sedona-video__controls {
+    height: 94px;
+    margin-top: -94px;
   }
 
 }
