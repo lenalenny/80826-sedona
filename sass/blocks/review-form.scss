@@ -39,3 +39,12 @@
   }
 
 }
+
+@media (min-width: $desktop-width) {
+  .review-form__button {
+    padding: 15px 0;
+    text-align: center;
+
+  }
+
+}
